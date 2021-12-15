@@ -42,6 +42,11 @@ namespace csharpcastle
             
             services.AddScoped<AccountsRepository>();
             services.AddScoped<AccountService>();
+            services.AddTransient<CastlesService>();
+            services.AddTransient<CastlesRepository>();
+            // services.AddTransient<KnightsService>();
+            // services.AddTransient<KnightsRepository>();
+
         }
 
         private void ConfigureCors(IServiceCollection services)
